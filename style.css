@@ -1,0 +1,197 @@
+
+.diagonal { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSdibGFjaycvPgogIDxwYXRoIGQ9J00tMSwxIGwyLC0yCiAgICAgICAgICAgTTAsMTAgbDEwLC0xMAogICAgICAgICAgIE05LDExIGwyLC0yJyBzdHJva2U9J3doaXRlJyBzdHJva2Utd2lkdGg9JzMnLz4KPC9zdmc+"); background-repeat: repeat;background-size:8.8%; }
+.bounceRight {
+  animation: bounceRight 2s infinite;
+}
+
+@keyframes bounceRight {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+
+.marquee {
+  position: relative;
+  max-width: 100%;
+  height: 200px;
+  overflow: hidden;
+	color:white;
+	font-family:nimbus2;
+	font-size:300%;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	height:100%;
+	display:block;
+	text-align:center;
+
+}
+
+.marquee2 {
+  bottom:0;
+  left:0;
+  position:fixed;
+  width: 100%;
+  height: 10%;
+  overflow-y: hidden;
+	color:white;
+	font-family:nimbus;
+	font-size:250%;
+	display:block;
+	text-align:center;
+
+}
+.marquee3 {
+  top:0;
+  left:0;
+  position:fixed;
+  width: 100%;
+  height: 10%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+	color:white;
+	font-family:nimbus2;
+	font-size:250%;
+	display:block;
+	text-align:center;
+
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+}
+.track2 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee2 30s linear infinite;
+}
+.track3 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee2 30s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+@keyframes marquee2 {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+@keyframes marquee3 {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+
+	span1{
+    font-size:700%;
+		font-family: nimbus2;
+    color: white;
+		animation: blink-animation 1.5s steps(5, start) infinite;
+   -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+	}
+	span3{
+		font-size: 300%;
+		font-family: coutureI;
+		color: black;
+		animation: blink-animation 1.5s steps(5, start) infinite;
+	 -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+	}
+
+	@keyframes blink-animation {
+	  to {
+	    visibility: hidden;
+	  }
+	}
+	@-webkit-keyframes blink-animation {
+	  to {
+	    visibility: hidden;
+	  }
+	}
+
+
+.rotate {
+    animation:rotation 2s infinite linear
+}
+@keyframes rotation {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotate2 {
+    overflow: hidden;
+    transition-duration: 0.6s;
+    transition-property: transform;
+}
+.rotate2:hover {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.rotate3 {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.rotate3:hover {
+    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+}
+
+.rotate4 {
+    overflow: hidden;
+    transition-duration: 0.6s;
+    transition-property: transform;
+}
+.rotate4:hover {
+    transform: rotate(-80deg);
+    -webkit-transform: rotate(-80deg);
+}
+
+.effect3 {
+    overflow: hidden;
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+.effect3:hover {
+   transform: translateX(-100px);
+   -webkit-
+}
+
+.effect4 {
+    overflow: hidden;
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+.effect4:hover {
+   transform: translateX(300px);
+   -webkit-transform: translateX(300px);
+}
+
+.effect5 {
+    overflow: hidden;
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+.effect5:hover {
+   transform: translateX(-170px);
+   -webkit-transform: translateX(-500px);
+}

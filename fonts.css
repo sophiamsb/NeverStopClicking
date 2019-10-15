@@ -1,0 +1,28 @@
+
+
+@font-face {
+    font-family: "brush";
+    src: url('fonts/BrushScriptStd.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"coutureI";
+    src: url('fonts/couture-bldit.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:"nimbus";
+    src: url('fonts/nimbus-sans-l/NimbusSanL-BolIta.otf') format('truetype');
+    font-weight: normal;
+    font-style: BolIta;
+}
+
+@font-face {
+    font-family:"nimbus2";
+    src: url('fonts/nimbus-sans-l/NimbusSanL-Bol.otf') format('truetype');
+    font-weight: normal;
+    font-style: Bol;
+}
